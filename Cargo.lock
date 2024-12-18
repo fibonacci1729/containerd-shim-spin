@@ -1584,6 +1584,7 @@ name = "containerd-shim-spin-v2"
 version = "0.17.0"
 dependencies = [
  "anyhow",
+ "async-trait",
  "containerd-shim",
  "containerd-shim-wasm",
  "ctrlc",
@@ -1597,6 +1598,7 @@ dependencies = [
  "spin-app",
  "spin-common",
  "spin-componentize",
+ "spin-compose",
  "spin-core",
  "spin-expressions",
  "spin-factor-outbound-networking",
@@ -1625,8 +1627,7 @@ dependencies = [
 [[package]]
 name = "containerd-shim-wasm"
 version = "0.6.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "002a7cb9718411b13190f45d454c6e63936ed106077c67060a9f2e8a283c9933"
+source = "git+https://github.com/fibonacci1729/runwasi?branch=precompile#c629d78fe094a9fb85fc9243765dfca29e93b645"
 dependencies = [
  "anyhow",
  "caps",

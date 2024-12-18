@@ -44,6 +44,7 @@ pub(crate) async fn handle_archive_layer(
 }
 
 // Returns Some(WasmLayer) if the layer contains wasm, otherwise None
+#[allow(unused)]
 pub(crate) fn is_wasm_content(layer: &WasmLayer) -> Option<WasmLayer> {
     if let MediaType::Other(name) = layer.config.media_type() {
         if name == constants::OCI_LAYER_MEDIA_TYPE_WASM {

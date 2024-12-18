@@ -1,6 +1,6 @@
   {
     "name": "Containerd Wasm Shims",
-    "image": "mcr.microsoft.com/vscode/devcontainers/universal:linux",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
     "features": {
       // Use this feature to connect to Docker running on host machine either as a Desktop version or Daemon.
       "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}

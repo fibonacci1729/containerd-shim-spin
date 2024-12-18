@@ -11,13 +11,15 @@ Containerd shim for running Spin workloads.
 """
 
 [dependencies]
-containerd-shim-wasm = "0.6.0"
+async-trait = "0.1"
+containerd-shim-wasm = { git = "https://github.com/fibonacci1729/runwasi", branch = "precompile" }
 containerd-shim = "0.7.1"
 http = "1"
 log = "0.4"
 spin-app = { git = "https://github.com/fermyon/spin", tag = "v3.0.0" }
 spin-core = { git = "https://github.com/fermyon/spin", tag = "v3.0.0" }
 spin-componentize = { git = "https://github.com/fermyon/spin", tag = "v3.0.0" }
+spin-compose = { git = "https://github.com/fermyon/spin", tag = "v3.0.0" }
 # Enable loading components precompiled by the shim
 spin-trigger = { git = "https://github.com/fermyon/spin", tag = "v3.0.0", features = [
     "unsafe-aot-compilation",
